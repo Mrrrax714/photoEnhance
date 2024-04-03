@@ -1,5 +1,8 @@
-function photoEnhance($in,$out,$qual=100)
+function photoEnhance($in,$out=false,$qual=100)
 {
+if($out===0)
+{
+$out=$in;}
 // Load the image
 $image = imagecreatefromjpeg($in);
 
